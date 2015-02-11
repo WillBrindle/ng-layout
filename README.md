@@ -5,13 +5,13 @@
 
 layout.html
 ```html
-<table>
+<table> <!-- no white space at the beginning is important -->
   <tr>
-    <td>
-      <yield content_for="left">
+    <td>                                <!-- important that the yield is contained in an element -->
+      <yield content_for="left" />      <!-- important to close this -->
     </td>
     <td>
-      <yield content_for="right">
+      <yield content_for="right" />
     </td>
   </tr>
 </table>
