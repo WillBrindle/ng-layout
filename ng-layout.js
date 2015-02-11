@@ -8,7 +8,7 @@ angular.module('ngLayout', [])
       var YIELD = 'YIELD'
       return {
         restrict: 'E',
-        scope: { src: '=' },
+        scope: { src: '@' },
         transclude: true,
         compile: function(elmt, attr, transclude) {
           var element = elmt
